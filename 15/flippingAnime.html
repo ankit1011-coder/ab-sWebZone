@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>ab's WebZone</title>
+        <style type="text/css">
+            body{
+                background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+                padding: 0;
+                margin: 0;
+                height: 100vh;
+                width:100vw;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .loaderAB{
+                perspective: 700px;
+            }
+            
+            .loaderAB>span{
+                font-size: 130px;
+                display: inline-block;
+                animation: flipAB 2.6s infinite linear;
+                transform-origin: 0 70%;
+                transform-style: preserve-3d;
+            }
+            
+            @keyframes flipAB{
+                35%{transform: rotateX(360deg);}
+                100%{transform: rotateX(360deg);}
+            }
+            
+            .loaderAB>span:nth-child(even){
+                color: #764ba2;
+            }
+            
+            .loaderAB>span:nth-child(odd){
+                color: #667eea;
+            }
+            
+            .loaderAB>span:nth-child(2){
+                animation-delay: 0.3s;
+            }
+            
+            .loaderAB>span:nth-child(3){
+                animation-delay: 0.6s;
+            }
+            
+            .loaderAB>span:nth-child(4){
+                animation-delay: 0.9s;
+            }
+            
+            .loaderAB>span:nth-child(5){
+                animation-delay: 1.2s;
+            }
+            
+            .loaderAB>span:nth-child(6){
+                animation-delay: 1.5s;
+            }
+            
+            .loaderAB>span:nth-child(7){
+                animation-delay: 1.8s;
+            }
+        </style>
+    </head>
+    <body>
+		<div class="loaderAB">
+            <span>L</span>
+            <span>O</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+        </div>
+	</body>
+</html>

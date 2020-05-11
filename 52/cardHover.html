@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>ab's WebZone</title>
+        <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+         html {
+             height: 100%;
+        }
+         body {
+             padding: 0;
+             margin: 0;
+             background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+             background-blend-mode: multiply,multiply;
+             font-family: 'Ubuntu', sans-serif;
+        }
+        
+            .image{
+                width: 500px;
+                height: 280px;
+                margin: 150px auto;
+                perspective: 1000px;
+            }
+        
+            .image .box{
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(ab.png);
+                background-size: 0, cover;
+                transform-style: preserve-3d;
+                transition: all 0.5s;
+            }
+            
+            .image .box:hover{
+                transform: rotateX(80deg);
+                transform-origin: bottom;
+            }
+            
+            .image .box:after{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 36px;
+                background: inherit;
+                background-size: cover, cover;
+                background-position: bottom;
+                transform: rotateX(90deg);
+                transform-origin: bottom;
+            }
+            
+            .image .box::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.5);
+                box-shadow: 0px 0px 100px 50px rgba(0,0,0,.5);
+                transition: all 0.5s;
+                opacity: 0.15;
+                transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+                transform-origin: bottom;
+            }
+            
+            .image .box:hover:before {
+                opacity: 1;
+                box-shadow: 0px 0px 25px 25px rgba(0,0,0,0.5);
+                transform: rotateX(0) translateZ(-60px) scale(0.85);
+            }
+            
+            .image .text{
+                position: absolute;
+                width: 90%;
+                height: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                color: #eee;
+            }
+            
+            .image .text h2{
+                color: #e3e3e3;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="image">
+            <div class="text">
+                <h2>AB's WebZone</h2>
+                <p>
+                    This is Our Youtube Channel. Which was made for WebDesinging And CSS design. It is usefull for your website highly decorate with this some type of buttons,images,div,and etc..effects. It is simple and easy to understanding so it is usefull for both of begginers and advance.
+                </p>
+            </div>
+            <div class="box"></div>
+        </div>
+    </body>
+</html>

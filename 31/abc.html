@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>ab's WebZone</title>
+        <style type="text/css">
+            body {
+              background-color: #eef4ed;
+              text-align: center;
+            }
+            
+            div{
+                width: 25%;
+                margin: 2rem auto;
+                padding: 2em;
+                background-repeat: no-repeat;
+                background-image: linear-gradient(to right, #c9c9c9 100%, #c9c9c9 100%), linear-gradient(to bottom, #c9c9c9 100%, #c9c9c9 100%),linear-gradient(to right, #c9c9c9 100%, #c9c9c9 100%), linear-gradient(to bottom, #c9c9c9 100%, #c9c9c9 100%);
+                
+                background-size: 100% 3px,
+                                 3px 100%,
+                                 100% 3px,
+                                 3px 100%;
+                background-position: 0 0,100% 0,100% 100%,0 100%;
+                animation: bgab 1.25s cubic-bezier(0.19,1,0.22,1) 1;
+                animation-play-state: paused;
+            }
+            
+            div:hover{
+                animation-play-state: running;
+            }
+            
+            @keyframes bgab{
+                0%{
+                    background-size: 0 3px,
+                                 3px 0,
+                                 0 3px,
+                                 3x 0;
+                }
+                25%{
+                    background-size: 100% 3px,3px 0,0 3px,3px 0;
+                }
+                50%{
+                    background-size: 100% 3px,3px 100%,0 3px,3px 0;
+                }
+                75%{
+                    background-size: 100% 3px,3px 100%,100% 3px,3px 0;
+                }
+                100%{
+                    background-size: 100% 3px,
+                                 3px 100%,
+                                 100% 3px,
+                                 3px 100%;
+                }
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div>
+          <h1>AB...,Hover me!</h1>          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at error, facilis nesciunt officiis perspiciatis repudiandae voluptates voluptatibus? Aperiam atque consectetur esse excepturi explicabo facilis labore magnam provident unde vitae.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <style type="text/css">
+            .container{
+                margin: 2em auto;
+                max-width: 40em;
+                width: 80%;
+            }
+            
+            .laptop{
+                background: radial-gradient(100% 100% at 50% 50%, rgba(0,0,0,0.4) 49%,transparent 50%) -26px 50%/20px 20px, linear-gradient(0deg, rgba(0,0,0,0.4) 100%, transparent 0) calc(100% + 15px) 50%/6px 80px;
+                background-repeat: no-repeat;
+                border: 24px solid rgba(0,0,0,0.3);
+                border-left-width: 32px;
+                border-radius: 15px;
+                box-shadow: 0 0 0 4px rgba(0,0,0,0.4);
+                transition: background .5s ease-in-out;
+            }
+            
+            @media screen and (max-width: 40em){
+                .laptop{
+                    background: radial-gradient(100% 100% at 50% 50%, rgba(0,0,0,0.4) 49%,transparent 50%) 50% calc(100% + 36px)/30px 30px, linear-gradient(90deg,rgba(0,0,0,0.4) 100%,transparent 0) 50% -20px/80px 6px;
+                    
+                    background-repeat: no-repeat;
+                    border-width: 45px 10px;
+                    min-height: 480px;
+                    max-height: 90vh;
+                    object-fit: cover;
+                    object-position: top left;
+                }
+            }
+            
+            @media screen and (min-width: 62em){
+                .laptop{
+                    background: radial-gradient(100% 100% at 50% 50%, rgba(0,0,0,0.4) 49%,transparent 50%) 50% -14px/10px 10px;
+                }
+                
+                .laptop-base{
+                    background-color: #051d27;
+                    border-radius: 0 0 15px 15px;
+                    display: block;
+                    height: 24px;
+                    margin-left: -5%;
+                    margin-top: -20px;
+                    position: relative;
+                    width: 110%;
+                }
+                
+                .laptop-base{
+                    content: "";
+                    background-color: rgba(255,255,255,0.2);
+                    border-radius: 0 0 5px 5px;
+                    display: block;
+                    height: 5px;
+                    margin: 0 auto;
+                    width: 50px;
+                }
+            }
+            
+            *{
+                box-sizing: border-box;
+            }
+            
+            body{
+                background-color: #00435e;
+                color: white;
+                margin: 0;
+                text-align: center;
+            }
+            
+            img{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <picture>
+                <source media="(max-width: 40em)" srcset="phone.jpg">
+                <source media="(min-width: 62em)" srcset="laptop.jpg">
+                <img class="laptop" src="tab.jpg" alt="layouts">
+                <i class="laptop-base"></i>
+            </picture>
+        </div>
+    </body>
+</html>

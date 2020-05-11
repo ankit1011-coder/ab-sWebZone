@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>ab's Webzone</title>
+        <style type="text/css">
+            html,body{
+                background-color: #030303;
+                transition: all 0.3s;
+                height: 100%;
+            }
+            
+            .button-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+            }
+            
+            .glass-btn{
+                width: 100px;
+                height: 100px;
+                background-color: #090909;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 7px;
+                margin-left: 1em;
+                margin-right: 1em;
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+            
+            .glass-btn.b-btn{
+                box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
+            }
+            
+            .glass-btn.b-btn:hover{
+                box-shadow: 0px 20px 35px -17px rgba(0, 111, 255, 0.65);
+            }
+ 
+            .glass-btn.r-btn{
+                box-shadow: 0px 20px 20px -17px rgba(255, 16, 39, 0.53);
+            }
+            
+            .glass-btn.r-btn:hover{
+                box-shadow: 0px 20px 35px -17px rgba(255, 16, 39, 0.65);
+            }
+            
+            .glass-btn.a-btn{
+                box-shadow: 0px 20px 20px -17px rgba(255, 159, 16, 0.53);
+            }
+            
+            .glass-btn.a-btn:hover{
+                box-shadow: 0px 20px 35px -17px rgba(255, 159, 16, 0.65);
+            }
+            
+            .glass-btn:hover{
+                background-color: #c3c3c3;
+                transform: translateY(-5px) translateX(-5px);
+                transition: all 0.3s;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="button-container">
+            <div class="glass-btn b-btn">
+                <img src="insta.png" alt="instagram" style="width: 5.5em;">
+            </div>
+            <div class="glass-btn r-btn">
+                <img src="codepen.png" alt="instagram" style="width: 5.5em;">
+            </div>
+            <div class="glass-btn a-btn">
+                <img src="reddit.png" alt="instagram" style="width: 5.5em;">
+            </div>
+        </div>
+    </body>
+</html>

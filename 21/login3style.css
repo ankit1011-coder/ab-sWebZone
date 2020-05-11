@@ -1,0 +1,44 @@
+body
+{
+	margin-top: 5%;
+	
+}
+div input[type="text"],input[type="Email"],input[type="password"]
+{
+	border-radius: 10px;
+	border:1px black solid;
+	text-align: center;
+	font-weight: bold;
+}
+ .logo
+{
+	background-color: #0000ff;
+	font-size: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 50px 50px 50px 50px;
+	color: white;
+}
+div .main
+{
+	height: 500px;
+	padding: 10px;
+	
+}
+div button
+{
+	border-radius: 15px;
+	background-color: #0000ff;
+	color: #fff;
+}
+input[type="Email"],input[type="password"]
+{
+	padding-right: 90px;
+	padding-left: 90px;
+}
+
+input:focus{
+	outline: none;
+}

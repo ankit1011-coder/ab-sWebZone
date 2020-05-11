@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>ab's WebZone</title>
+        <style type="text/css">
+            body{
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #444;
+            }
+            
+            ul{
+                padding: 0;
+                list-style-type: none;
+            }
+            
+            li{
+                font-size: 25px;
+                width: 8em;
+                height: 2em;
+                color: green;
+                border-left: 0.08em solid;
+                border-bottom: 0.08em solid;
+                position: relative;
+                margin-top: 0.8em;
+                cursor: pointer;
+            }
+            
+            li::before,
+            li::after{
+                content: '';
+                position: absolute;
+                width: inherit;
+                border-left: inherit;
+                border-bottom: inherit;
+                z-index: -1;
+            }
+            
+            li::before{
+                height: 80%;
+                top: 10%;
+                left: calc(-0.15em - 0.08em * 2);
+                bottom: calc(-0.15em - 0.08em * 2);
+                filter: brightness(0.6);
+            }
+            
+            li::after{
+                height: 60%;
+                top: 20%;
+                left: calc(-0.15em * 2 - 0.08em * 3);
+                bottom: calc(-0.15em * 2 - 0.08em * 3);
+                filter: brightness(0.6);
+            }
+            
+            li span{
+                position: relative;
+                height: 120%;
+                top: -10%;
+                left: 10%;
+                box-sizing: border-box;
+                border: 0.08em solid;
+                background-color: #444;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: sans-serif;
+                text-transform: capitalize;
+                transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+                transition: 0.3s;
+            }
+            li:hover span{
+                transform: translateX(0.15em) translateY(-0.5em);
+            }
+        </style>
+    </head>
+    
+    <body>
+        <ul>
+            <li><span>Home</span></li>
+            <li><span>About</span></li>
+            <li><span>Member</span></li>
+            <li><span>Contact</span></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>ab's WebZone</title>
+        <style type="text/css">
+            body{
+                background: #444;
+            }
+            
+            img{
+                border-radius: 20px;
+            }
+            
+            .container{
+                position: absolute; top: 50%; left: 50%; text-align: center; transform: translate(-50%, -50%);
+            }
+            
+            .img1{
+                position: relative; top: 0; left: 0;
+            }
+            
+            .img2, .img3, .img4{
+                position: absolute; top: 0; left: 0;
+            }
+            
+            .img1{
+                animation: Slideright 3s infinite; 
+                animation-delay: 3s;
+            }
+            
+            .img2{
+                animation: Sliderleft 3s infinite; 
+                animation-delay: 3s;
+            }
+            
+            .img3{
+                animation: Sliderights 3s infinite; 
+                animation-delay: 3s;
+            }
+            
+            .img4{
+                animation: Sliderlefts 3s infinite; 
+                animation-delay: 3s;
+            }
+            
+            @keyframes Slideright{
+                to {transform: translateX(180px);}
+            }
+            
+            @keyframes Sliderleft{
+                to {transform: translateY(170px);}
+            }
+            
+            @keyframes Sliderights{
+                to {transform: translateX(-180px);}
+            }
+            
+            @keyframes Sliderlefts{
+                to {transform: translateY(-170px);}
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+        <div style="position: relative; left: 0; top: 0;">
+            <img src="https://source.unsplash.com/random/150x150" class="img1">
+            <img src="https://source.unsplash.com/random/150x151" class="img2">
+            <img src="https://source.unsplash.com/random/150x152" class="img3">
+            <img src="https://source.unsplash.com/random/150x153" class="img4">
+        </div>
+            </div>
+    </body>
+</html>

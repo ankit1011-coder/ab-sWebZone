@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>ab's WebZone</title>
+        <style type="text/css">
+            html,body{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                display: table;
+                background-color: #090909;
+            }
+            
+            @font-face{
+                font-family: neon;
+                src: url(neon.ttf);
+            }
+            
+            .container{
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+            }
+            
+            .neon{
+                font-family: neon;
+                color: #fb4264;
+                font-size: 9vw;
+                line-height: 9vw;
+                text-shadow: 0 0 3vw #f40a35;
+            }
+            
+            .ab{
+                font-family: neon;
+                color: #426dfb;
+                font-size: 9vw;
+                line-height: 9vw;
+                text-shadow: 0 0 3vw #2356fe;
+            }
+            
+            .neon{
+                animation: neon 1s ease infinite;
+            }
+            
+            @keyframes neon{
+                0%,100%{
+                    text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16,0 0 10vw #fa1c16, 0 0 10vw #fa1c16, 0 0 .4vw #fed128, .5vw .5vw .1vw #806914;
+                    
+                    color: #fed128;
+                }
+                50%{
+                    text-shadow: 0 0 .5vw #800e0b, 0 0 1.5vw #800e0b,0 0 5vw #800e0b, 0 0 5vw #800e0b, 0 0 .2vw #800e0b, .5vw .5vw .1vw #403404;
+                    
+                    color: #806914;
+                }
+            }
+            
+            .ab{
+                animation: ab 2s linear infinite;
+            }
+            
+            @keyframes ab{
+                0%,100%{
+                    text-shadow: 0 0 1vw #1041ff, 0 0 3vw #1041ff,0 0 10vw #1041ff, 0 0 10vw #1041ff, 0 0 .4vw #8bfdfe, .5vw .5vw .1vw #147280;
+                    
+                    color: #28d7fe;
+                }
+                50%{
+                    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180,0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0a3940;
+                    
+                    color: #146c80;
+                }
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="neon">neon</div>
+            <div class="ab">AB</div>
+        </div>
+    </body>
+</html>

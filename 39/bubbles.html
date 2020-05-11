@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>ab's WebZone</title>
+        <style type="text/css">
+            body{
+                background: rgb(69,16,138);
+                background: linear-gradient(142deg, rgba(69,16,138,1) 2.02%, rgba(61,6,95,1) 29.29%, rgba(16,5,77,1) 100%);
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                margin: 0;
+                height: 100vh;
+                align-items: center;
+                align-content: center;
+            }
+            
+            .bubbleAB{
+                display: flex;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 30px;
+                min-width: 40px;
+                max-height: 40px;
+                max-width: 220px;
+                margin: 20px;
+                position: relative;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .bubbleAB:before,.bubbleAB:after{
+                content: "";
+                background-color: #fff;
+                border-radius: 50%;
+                display: block;
+                position: absolute;
+                z-index: -1;
+            }
+            
+            .bubbleAB:before{
+                width: 44px;
+                height: 44px;
+                top: -12px;
+                left: 28px;
+                box-shadow: -50px 30px 0 -12px #fff;
+            }
+            
+            .bubbleAB:after{
+                bottom: -10px;
+                right: 26px;
+                width: 30px;
+                height: 30px;
+                box-shadow: 40px -34px 0 0 #fff,
+                    -28px -6px 0 -2px #fff,
+                    -24px 17px 0 -6px #fff,
+                    -5px 25px 0 -16px #fff;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="bubbleAB">This Is a bubble</div>
+        <div class="bubbleAB">I have Dogs</div>
+        <div class="bubbleAB">This Is a Codepen on the internet</div>
+        <div class="bubbleAB">Hello I'm Ankit This My Youtube Channel For Creative CSS Idea Or Web Desigining Ideas For Begginers And Advance Level</div>
+        <div class="bubbleAB">This is another thought bubble</div>
+    </body>
+</html>

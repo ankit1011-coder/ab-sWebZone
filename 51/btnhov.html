@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>ab's WebZone</title>
+        <style type="text/css">
+            body{
+                display: flex;
+                flex-direction: column;
+                height: 93vh;
+                justify-content: center;
+                align-items: center;
+                background: #c3c3c3;
+                font-family: "Dosis", sans-serif;
+            }
+            
+            .brk-btn{
+                position: relative;
+                background: none;
+                color: aqua;
+                text-decoration: none;
+                text-transform: uppercase;
+                border: 0.2em solid aqua;
+                padding: 0.5em 1em;
+            }
+            
+            .brk-btn::before{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 10%;
+                background: #c3c3c3;
+                height: 0.3em;
+                right: 20%;
+                top: -0.21em;
+                transform: skewX(-45deg);
+                transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+            }
+ 
+            .brk-btn::after{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 10%;
+                background: #c3c3c3;
+                height: 0.3em;
+                left: 20%;
+                bottom: -0.25em;
+                transform: skewX(45deg);
+                transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+            }
+            
+            .brk-btn:hover::before{
+                right: 80%;
+            }
+            
+            .brk-btn:hover::after{
+                left: 80%;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <a href="https://www.youtube.com/ab-swebzone/" class="brk-btn">Visit Me</a>
+    </body>
+</html>

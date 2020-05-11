@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <title>ab's WebZone</title>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css?family=Maven+Pro:500&display=swap');
+
+            body {
+              margin: 0;
+              padding: 0;
+              display: flex;
+              min-height: 100vh;
+            }
+            
+            .hotspots--wrapper{
+                position: relative;
+                margin: auto;
+                max-width: 960px;
+                font-family: 'Maven Pro', sans-serif;
+                font-weight: 500;
+            }
+            
+            .hotspots--figure{
+                max-width: 100%;
+            }
+            
+            .hotspot {
+                position: absolute;
+            }
+            
+            .title{
+                display: inline-block;
+                padding-right: 10px;
+                color: #ff0000;
+                text-transform: uppercase;
+                line-height: 50px;
+                font-size: 12px;
+                letter-spacing: 1px;
+                transition: all cubic-bezier(.8,0,.2,1) .4s;
+            }
+            
+            .cta{
+                position: relative;
+                float: right;
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #ff0000;
+                transition: all cubic-bezier(.8,0,.2,1) .4s;
+            }
+            
+            .cta::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #fff;
+                z-index: 2;
+                transition: opacity .6s;
+                animation: pulse 1.6s cubic-bezier(.8,0,.2,1) 0s infinite;
+            }
+            
+            .hotspot:hover .cta{
+                transform: scale(.6);
+            }
+            
+            .hotspot:hover .cta:after{
+                opacity: 0;
+            }
+            
+            @keyframes pulse{
+                0%{transform: scale(0.4);}
+                33%{transform: scale(1);}
+                66%{transform: scale(0.4);}
+                100%{transform: scale(0.4);}
+            }
+            
+            .airpords{
+                top: 70%;
+                right: 68%;
+            }
+            
+            .ipad{
+                top: 22%;
+                right: 48%;
+            }
+            
+            .iphone{
+                top: 72%;
+                left: 50%;
+            }
+            
+            .block{
+                width: 100px;
+                visibility: hidden;
+                line-height: 50px;
+                font-size: 12px;
+                letter-spacing: 1px;
+                color: white;
+                position: absolute;
+                z-index: 2;
+                background: #ff0000;
+                opacity: 0.8;
+                border-radius: 50px;
+            }
+            
+            .ipad:hover .block{
+                visibility: visible;
+            }
+            .airpords:hover .block{
+                visibility: visible;
+            }
+            .iphone:hover .block{
+                visibility: visible;
+            }
+            
+            @media screen and (max-width: 640px){
+                .title{
+                    line-height: 40px;
+                    font-size: 10px;
+                }
+                .cta{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            
+            @media screen and (max-width: 420px){
+                .title{
+                    display: none;
+                }
+                .cta{
+                    width: 20px;
+                    height: 20px;
+                }
+                
+                .cta::after{
+                    width: 5px;
+                    height: 5px;
+                }
+            }
+            
+            @media screen and (max-width: 640px){
+                .title{
+                    line-height: 40px;
+                    font-size: 10px;
+                }
+                .cta{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="hotspots--wrapper">
+            <img src="apple-product.jpg" class="hotspots--figure">
+            
+            <a class="hotspot airpords" href="#">
+                <span class="title">Airpords</span>
+                <span class="cta"></span>
+                <span class="block">It is Airpords</span>
+            </a>
+            
+            <a class="hotspot ipad" href="#">
+                <span class="title">ipad</span>
+                <span class="cta"></span>
+                <span class="block">It is ipad</span>
+            </a>
+            
+            <a class="hotspot iphone" href="#">
+                <span class="title">iphone</span>
+                <span class="cta"></span>
+                <span class="block">It is iphone</span>
+            </a>
+        </section>
+    </body>
+</html>

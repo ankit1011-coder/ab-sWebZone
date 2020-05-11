@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>ab's WebZone</title>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+            
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            body{
+                font-family: 'Cookie', cursive;
+            }
+            
+            .sec{
+                align-items: center;
+                background: url('winter.jpg') no-repeat center / cover;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                height: 100vh;
+                padding: 1rem;
+                position: sticky;
+                width: 100%;
+                z-index: -1;
+            }
+            
+            .sec:nth-child(2){
+                background-image: url(spring.jpg);
+                z-index: -2;
+            }
+            
+            .sec:nth-child(3){
+                background-image: url('summer.jpg');
+                z-index: -3;
+            }
+            
+            .sec:last-child{
+                background-image: url('autumn.jpg');
+                z-index: -4;
+            }
+            
+            .title{
+                font-size: 5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="sec">
+            <h2 class="title">Winter</h2>
+        </section>
+        <section class="sec">
+            <h2 class="title">Spring</h2>
+        </section>
+        <section class="sec">
+            <h2 class="title">Summer</h2>
+        </section>
+        <section class="sec">
+            <h2 class="title">Autumn</h2>
+        </section>
+    </body>
+</html>
