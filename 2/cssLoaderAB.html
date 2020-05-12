@@ -3,14 +3,14 @@
         <title>ab's WebZone</title>
         <style type="text/css">
             body{
-                background-color: #ececec;
+                background-color: #c3c3c3;
             }
             
             .container{
                 width: 200px; height: 200px; position: absolute;
                 top: 50%; left: 50%;
                 transform: translate(-50%, -50%);
-                margin: auto; filter: url('#goog');
+                margin: auto; filter: url('#ab');
                 animation: rotate-move 2s ease-in-out infinite;
             }
             
@@ -80,7 +80,7 @@
         
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
             <defs>
-                <filter id="goog">
+                <filter id="ab">
                     <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
                     <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 41 -7" />
                 </filter>
